@@ -744,7 +744,7 @@
                                 <!-- see the f/w com.googlecode.junit-toolbox:junit-toolbox -->
                                 <maxParallelTestThreads>3</maxParallelTestThreads>
                             </systemPropertyVariables>
-                            <redirectTestOutputToFile>true</redirectTestOutputToFile>
+                            <redirectTestOutputToFile>false</redirectTestOutputToFile>
                             <enableProcessChecker>native</enableProcessChecker>
                             <shutdown>kill</shutdown>
                         </configuration>
