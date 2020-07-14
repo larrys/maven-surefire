@@ -155,7 +155,7 @@ public class ChecksumCalculator
         {
             MessageDigest md = MessageDigest.getInstance( "SHA-1" );
             String configValue = getConfig();
-            md.update( configValue.getBytes( ISO_8859_1 ), 0, configValue.length() );
+            md.update( configValue.getBytes( ISO_8859_1 ), 0, configValue.codePointCount( 0, configValue.length() ) );
             byte[] sha1hash = md.digest();
             return asHexString( sha1hash );
         }
